@@ -5,43 +5,69 @@
 <--- -------------------------- -*/
 
 /* Mobile */
-@media only screen and (min-width: 0em) {
-	// Dark Mode Color Scheme
-	:root {
-		--dark: #082032;
-		--medium: #2c394b;
-		--accent: #334756;
-	}
+@media only screen and (min-width: 0rem) {
 
-	body.dark-mode {
-		background-color: var(--dark);
+    // Dark Mode Color Scheme
+    :root {
+        --dark: #121212;
+        --medium: #282828;
+        --accent: #404040;
+        --bodyTextColorWhite: #FAFBFC;
+    }
 
-		p,
-		li,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			color: #fff;
-		}
+    body.dark-mode {
+        background-color: var(--dark);
 
-		// hide all light classes
-		.light {
-			display: none;
-		}
+        p, li, h1, h2, h3, h4, h5, h6, .cs-title, .cs-text, .cs-li {
+            color: var(--bodyTextColorWhite);
+        }
 
-		// show all dark classes
-		.dark {
-			display: block !important;
-		}
-	}
+        // hide all light classes
+        .light {
+            display: none;
+        }
 
-	.dark {
-		display: none;
-	}
+        // show all dark classes
+        .dark {
+            display: block !important;
+        }
+
+        .cs-button-solid {
+            background-color: var(--primary);
+            color: #fff;
+            transition: color .3s;
+
+            &:hover {
+                color: #fff;
+                &:before {
+                    width: 100%;
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background-color: #88878a;
+                
+                //Transition properties
+                width: 0;
+                transition: width 0.3s;
+            }
+          }
+    }
+
+    .dark {
+        /* class used to hide elements that only need to be seen when dark mode is enabled */
+        display: none;
+    }
 }
+
 
 /*-- -------------------------- -->
 <---      Dark Mode Toggle      -->
@@ -49,75 +75,76 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-	body.dark-mode {
-		#dark-mode-toggle {
-			.cs-sun {
-				transform: translate(-50%, -50%);
-				opacity: 1;
-			}
 
-			.cs-moon {
-				transform: translate(-50%, -150%);
-				opacity: 0;
-				fill: #fff;
-			}
-		}
-	}
+    body.dark-mode {
+        #dark-mode-toggle {
+            .cs-sun {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
 
-	#dark-mode-toggle {
-		display: block;
-		position: absolute;
-		top: (10/16rem);
-		right: (70/16rem);
-		width: (48/16rem);
-		height: (48/16rem);
-		background: transparent;
-		border: none;
-		overflow: hidden;
-		padding: 0;
-		z-index: 1000;
+            .cs-moon {
+                transform: translate(-50%, -150%);
+                opacity: 0;
+            }
+        }
+    }
 
-		img,
-		svg {
-			//center image inside button
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: (20/16rem);
-			height: (20/16rem);
-			pointer-events: none;
-		}
+    #dark-mode-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: (90/16rem);
+        width: (48/16rem);
+        height: (48/16rem);
+        background: transparent;
+        border: none;
+        overflow: hidden;
+        padding: 0;
+        z-index: 1000;
+        transform: translateY(-50%);
 
-		.cs-moon {
-			z-index: 2;
-			// Transition properties
-			transition: transform 0.3s, opacity 0.3s;
+        img, svg {
+            //center image inside button
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: (20/16rem);
+            height: (20/16rem);
+            pointer-events: none;
+        }
 
-			// fill: yellow; --> uncomment to change the color of the moon if needed
-		}
-
-		.cs-sun {
-			z-index: 1;
-			// Transition property
-			transform: translate(-50%, 100%);
-			opacity: 0;
-			transition: transform 0.3s, opacity 0.3s;
-		}
-	}
+        .cs-moon {
+            z-index: 2;
+            // Transition properties
+            transition: transform .3s, opacity .3s;
+            fill: #000;
+        }
+    
+        .cs-sun {
+            z-index: 1;
+            // Transition property
+            transform: translate(-50%, 100%);
+            opacity: 0;
+            transition: transform .3s, opacity .3s;
+        }
+    }
 }
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-	#dark-mode-toggle {
-		position: relative;
-		transform: none;
-		top: auto;
-		right: auto;
-		margin: 0;
+    #dark-mode-toggle {
+        position: relative;
+        transform: none;
+        top: auto;
+        right: auto;
+        margin: 0;
 
-		&:hover {
-			cursor: pointer;
-		}
-	}
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
+
+
