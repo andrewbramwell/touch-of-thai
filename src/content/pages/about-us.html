@@ -1,0 +1,22 @@
+---
+title: 'About'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: false
+eleventyNavigation:
+    key: About
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

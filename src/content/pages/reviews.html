@@ -4,8 +4,9 @@ description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'reviews/'
 eleventyNavigation:
+    parent: About
     key: Reviews
-    order: 400
+    order: 220
 ---
 
 {% extends "layouts/base.html" %}
@@ -16,18 +17,27 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+ <!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Our Reviews</h1>
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
+<div id="banner-1106">
+    <div class="cs-container">
+        <span class="cs-int-title">Reviews</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/reviews" class="cs-link cs-active">Reviews</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/int-hero-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/int-hero.webp">
+        <img decoding="async" src="/assets/images/int-hero.webp" alt="massage oil" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
 
     <!-- ============================================ -->
     <!--                  Reviews                     -->
@@ -40,10 +50,10 @@ eleventyNavigation:
                     <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    Great intuition for my problem. Where my shoulder problem was, was obvious but my problem was also causational which was found. Great advice about exercise and self treatment. Great experience and very professional.
                 </p>
                 <div class="star-group">
-                    <span class="name">B Miller<span class="desc">Homeowner</span></span>
+                    <span class="name">David Sutcliffe</span>
                     <picture>
                         <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
                     </picture>
@@ -54,10 +64,10 @@ eleventyNavigation:
                     <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    I cannot find enough superlatives!!!! I can’t wait to get back for another treatment. I say “treatment” rather than “massage” because this is magical therapy! I had two sessions - with different masseurs. Both brilliant and both totally determined to unlock deep and ancient knotted issues under my skin. I can honestly say they both succeeded and I walked away very happy - after staggering in like a very old man!!! 
                 </p>
                 <div class="star-group">
-                    <span class="name">Vincent M.<span class="desc">Homeowner</span></span>
+                    <span class="name">David Palmer</span>
                     <picture>
                         <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
                     </picture>
@@ -68,10 +78,39 @@ eleventyNavigation:
                     <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    This type of treatment should be available on the NHS! I have been going for a few years, and Lisa and her magic ability to heal cannot be put into words. Lisa identifies quickly where the problems are, targets the issue and leaves you feeling wonderful. I have issues with my back and shoulder which she works wonders on. Cannot recommend highly enough for anyone with particular issues.
                 </p>
                 <div class="star-group">
-                    <span class="name">Alex L.<span class="desc">Homeowner</span></span>
+                    <span class="name">Laura Tomaino</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Lisa is an excellent massage therapist. I have issues with my shoulders and I get a lot of knots. She’s helped to release tensions and knots in my shoulders neck and back and gave me tips on how to manage the issues I suffer with. I lived in Thailand for 2 years and I have had a lot of Thai massages. So I was really impressed with her service and I will definitely be back.
+                </p>
+                <div class="star-group">
+                    <span class="name">Angela Gordon</span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    First time went to have massage because my back was killing me and pains in hands so much pain in upper back and stiffness. I thought it will be relaxing massage but the lady put all her power on me and massage all my problematic spot's that I went home so light no stiffness from first appointment 30 min. It's painful process but after you feel so good. Definitely recommend this masseur. ❤👍
+                </p>
+                <div class="star-group">
+                    <span class="name">Laura Indrule</span>
                     <picture>
                         <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
                     </picture>
@@ -82,38 +121,10 @@ eleventyNavigation:
                     <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    I had a massage with Lisa and it was amazing. She new all the areas where I  had pain and spent time on each part. She told me some things I can do at home to help too.
                 </p>
                 <div class="star-group">
-                    <span class="name">Arrieana M.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Leo N.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Brian A.<span class="desc">Homeowner</span></span>
+                    <span class="name">Katie Morton</span>
                     <picture>
                         <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
                     </picture>

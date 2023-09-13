@@ -237,13 +237,11 @@
     }
 
     #cs-navigation {
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: 'Roboto', 'Arial', sans-serif;
         width: 100%;
         padding: (20/16rem) (16/16rem);
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
-        background-color: #F6F3ED;
+        background-color: #FFF;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;
         z-index: 10000;
@@ -420,6 +418,8 @@
 
         .cs-li {
             width: 100%;
+            font-weight: 700;
+            text-transform: uppercase;
             text-align: center;
             list-style: none;
             margin-right: 0;
@@ -516,10 +516,15 @@
 
             .cs-li-link {
                 color: var(--bodyTextColorWhite);
+                &.cs-active {
+                    color: var(--primary);
+                }
             }
         }
     }
 }
+
+
 
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
@@ -627,7 +632,7 @@
             min-width: (200/16rem);
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
+            background-color: #fff;
             overflow: hidden;
             opacity: 0;
             visibility: hidden;
@@ -693,7 +698,7 @@
                 padding: (12/16rem);
                 /* prevents padding from affecting height and width */
                 box-sizing: border-box;
-                color: var(--bodyTextColorWhite);
+                color: var(--bodyTextColor);
                 display: block;
                 transition: color .3s, background-color .3s;
     
@@ -710,6 +715,31 @@
     }
 }
 
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #cs-navigation {
+            .cs-drop-ul {
+                background-color: var(--dark);
+            }
+
+            .cs-li-link {
+                &.cs-drop-link {
+                    &:hover {
+                        background-color: var(--medium);
+                    }
+                }
+            }
+
+            .cs-drop-icon {
+                /* turns it white */
+                filter: grayscale(1) brightness(1000%);
+            }
+            
+        }
+    }
+}
+
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
 <--- -------------------------- -*/
@@ -721,7 +751,7 @@
         padding: 0 (16/16rem);
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
-        background-color: #F6F3ED;
+        background-color: #FFF;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;
         z-index: 10000;
@@ -800,6 +830,7 @@
             display: block;
             position: relative;
             transition: color .3s;
+            font-weight: 700;
 
             &:hover {
                 color: var(--primary);
@@ -833,7 +864,15 @@
                 &:before {
                     background-color: var(--primaryLight);
                 }
+                &:hover {
+                    color: var(--primary);
+                }
+    
+                &.cs-active {
+                    color: var(--primary);
+                }
             }
+            
         }
     }
 }

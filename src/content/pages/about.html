@@ -1,11 +1,12 @@
 ---
-title: 'About'
+title: 'About Us'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'about/'
 eleventyNavigation:
+    parent: About
     key: About Us
-    order: 200
+    order: 210
 ---
 
 {% extends "layouts/base.html" %}
@@ -21,10 +22,10 @@ eleventyNavigation:
 
 <div id="banner-1106">
     <div class="cs-container">
-        <span class="cs-int-title">Contact Us</span>
+        <span class="cs-int-title">About Us</span>
         <div class="cs-breadcrumbs">
             <a href="/" class="cs-link">Home</a>
-            <a href="/contact" class="cs-link cs-active">Contact</a>
+            <a href="/about" class="cs-link cs-active">About Us</a>
         </div>
     </div>
     <!--Background Image-->
@@ -37,47 +38,93 @@ eleventyNavigation:
     </picture>
 </div>
                                 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+    <!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-865">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/sciatic-m.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/sciatic.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/sciatic.webp" alt="therapy" width="1280" height="568">
+            </picture>
+            <div class="cs-box">
+                <span class="cs-number">2500+</span>
+                <span class="cs-desc">
+                    Patients served successfully
+                </span>
             </div>
         </div>
-    </section>
+        <div class="cs-content">
+            <span class="cs-topper">Small Group Training</span>
+            <h2 class="cs-title">Specializing In Patient’s  Complex Rehabilitation</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptas quisquam! Facilis, distinctio. Molestiae ipsam dolorum repudiandae sint veritatis? Sapiente consectetur eaque vitae obcaecati voluptates impedit quae tempore commodi? Eos, quia! Atque optio quos voluptates earum impedit rem, necessitatibus omnis.
+            </p>
+            <div id="quote-827">
+                <span class="cs-quote-text">
+                    In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                </span>
+                <span class="cs-name">Justin Time</span>
+                <span class="cs-job">CEO-Founder</span>
+                <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-860">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Expert Team</span>
+                <h2 class="cs-title">Meet The Team Behind Their Success Story</h2>
+            </div>
+            <a href="" class="cs-button-solid">View All Members</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg" alt="person" width="305" height="407">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Arlene MacCoy</span>
+                    <span class="cs-job">Aesthetic Expert</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson2.jpg" alt="person" width="305" height="407">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Arlene MacCoy</span>
+                    <span class="cs-job">Aesthetic Expert</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
 
     {% include 'components/cta.html' %}
 
