@@ -1,0 +1,90 @@
+---
+title: 'About Us'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'sciatica-treatment/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/treatments.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <span class="cs-int-title">Sciatica Treatment</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/sciatica-treatment/" class="cs-link cs-active">Sciatica Treatment</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/int-hero-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/int-hero.webp">
+        <img decoding="async" src="/assets/images/int-hero.webp" alt="massage oil" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+                                
+
+<section id="content-page-713">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Sciatica Massage Treatments: <span class="cs-color">Your Path to Relief</span></h1>
+            <p>
+                At A Touch of Thai, we recognize that lower back pain and sciatica are common concerns for many. A significant number of people globally experience some form of lower back discomfort in their lifetime. For those who feel that familiar radiating pain from the lower back, traveling down one leg, sciatica could be the culprit.
+            </p>
+            <h3>Understanding Sciatica</h3>
+            <p>
+                Sciatica is not just a mere back pain; it's a term that encompasses any discomfort stemming from the sciatic nerve - a prominent nerve extending from the lower back, past the hips, and down each leg. While direct injuries to this nerve are infrequent, the pain it induces, known as sciatica, can result from various conditions. These include a herniated vertebral disk, lumbar spinal stenosis, piriformis syndrome, and spondylolisthesis, among others.
+            </p>
+            <p>
+                These conditions could be genetic, or often, the result of physical strain or trauma over time. Typical sciatic symptoms are distinct, typically affecting only one side of the body. These might manifest as a tingling sensation, numbness, or even a sharp pain making daily activities like standing or walking a challenge.
+            </p>
+            <h3>Massage as a Treatment</h3>
+            <p>
+                Massage therapy, particularly when done by experts like our team at A Touch of Thai, offers a beneficial avenue for those battling sciatica. By addressing muscle tightness around the sciatic nerve, massage provides relief from the undue pressure causing pain. Not only does it work on the physical aspect, but massage also triggers the release of endorphins, our body's natural painkillers, and decreases stress hormone levels. This dual effect ensures both pain relief and a tranquil healing environment for our clients.
+            </p>
+            <h3>A Glimpse into Our Techniques</h3>
+            <p>
+                Here at A Touch of Thai, we believe in the healing power of targeted massages. Our professionals are well-versed in:
+            </p>
+            <ul>
+                <li><strong>Deep Tissue Massage:</strong> Delving deep into muscles to relieve knots and tightness.</li>
+                <li><strong>Swedish Massage:</strong> A gentler approach stimulating nerve endings to release tension.</li>
+                <li><strong>Myofascial Release:</strong> A method focusing on the membranes supporting muscles, aiding in pain and stiffness reduction.</li>
+                <li><strong>Neuromuscular Massage:</strong> Targeting specific pressure points and knots to release tension.</li>
+            </ul>
+            <p>
+                Entrust your wellbeing to us. Let A Touch of Thai be your haven, providing specialized treatments that not only offer relief from sciatica but also rejuvenate your body and soul. Your journey to a pain-free life begins with us.
+            </p>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/sciatica.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/sciatica.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/sciatica.jpg" alt="person" width="570" height="680" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+    <!--Waves Graphic-->
+    <picture class="cs-background">
+        <img src="/assets/svgs/large-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+    </picture>
+</section>
+                                
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

@@ -1,0 +1,83 @@
+---
+title: 'Our Story'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'thai-massage/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/treatments.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <span class="cs-int-title">Thai Massage</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/thai-massage/" class="cs-link cs-active">Thai Massage</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/int-hero-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/int-hero.webp">
+        <img decoding="async" src="/assets/images/int-hero.webp" alt="massage oil" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+                                
+
+<section id="content-page-713">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title"><span class="cs-color">Traditional Thai Massage in Scarborough</span></h1>
+            <p>
+                Immerse yourself in the age-old tradition of Thai massage at A Touch of Thai, nestled in the heart of Scarborough. Revered as Nuad Thai or Thai yoga massage, this ancient modality traces its roots back to Thailand and presents a distinctive approach to holistic well-being. It seamlessly melds acupressure, assisted yoga positions, and gentle stretching to harmonize and alleviate disruptions in the body's energy channels, known as "sen lines."
+            </p>
+            <p>
+                During your session at A Touch of Thai, our adept therapists employ their hands, thumbs, elbows, knees, and even feet to exert rhythmic pressure along these vital sen lines. With a symphony of flowing motions, soothing rocking techniques, and deliberate stretches, pent-up tension is effortlessly released, paving the way for heightened flexibility, joint mobility, and profound relaxation.
+            </p>
+            <p>
+                Having garnered global acclaim for its profound benefits, Thai massage is the chosen remedy for many desiring relief from muscle tightness, stress-induced maladies, rigidity, and pervasive fatigue. Whether you're in pursuit of therapeutic respite or sheer rejuvenation, Thai massage at A Touch of Thai transcends conventional therapies, encapsulating the virtues of acupressure, yoga, and meditative tranquility in a singular, restorative encounter.
+            </p>
+            <h3>Advantages of Traditional Thai Massage at A Touch of Thai</h3>
+            <ul>
+                <li><strong>Headache Relief:</strong> Thai massage can alleviate symptoms of migraines and tension headaches, offering a natural alternative to medication and sustained relief.</li>
+                <li><strong>Back Pain Relief</strong> Eases back pain, focusing on both general discomfort areas and specific trigger points, ensuring a holistic treatment for the back.</li>
+                <li><strong>Joint Health:</strong> Enhance joint function and reduce pain or stiffness, allowing for smoother and more comfortable movement.</li>
+                <li><strong>Muscle Relaxation:</strong> Deep pressure and stretching techniques target and release muscle tension, effectively alleviating stiffness and discomfort. Experience a true sense of muscle rejuvenation.</li>
+                <li><strong>Improved Circulation:</strong> Benefit from stimulated blood flow which ensures efficient oxygen and nutrient delivery to muscles and organs, promoting better overall health.</li>
+                <li><strong>Enhanced Flexibility:</strong> Thai massage includes yoga-based stretches that target specific muscle groups, leading to a more flexible body and improved joint mobility.</li>
+                <li><strong>Stress Relief:</strong> A unique blend of physical manipulation, stretching, and relaxation techniques work in harmony to combat stress and anxiety.</li>
+                <li><strong>Elevated Energy & Vitality:</strong> Thai massage's emphasis on the body's energy pathways means a balanced energy flow, revitalizing both body and mind for a heightened sense of well-being.</li>
+            </ul>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/aroma-massage.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/aroma-massage.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/aroma-massage.webp" alt="person" width="570" height="680" aria-hidden="true">
+            </picture>
+        </div>
+    </div>
+    <!--Waves Graphic-->
+    <picture class="cs-background">
+        <img src="/assets/svgs/large-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+    </picture>
+</section>
+                                
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

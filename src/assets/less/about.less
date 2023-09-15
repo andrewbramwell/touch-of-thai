@@ -1,5 +1,3 @@
-/* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
-
 /*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
@@ -7,251 +5,199 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 
-    #sbs-865 {
+
+    #sbs-867 {
         padding: var(--sectionPadding);
-        position: relative;
         
         .cs-container {
             width: 100%;
-            /* changes to 1280px at desktop */
-            max-width: (550/16rem);
+            max-width: (1280/16rem);
             margin: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             /* 48px - 64px */
             gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
         }
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
-            max-width: (570/16rem);
+            max-width: (630/16rem);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
         }
     
-        .cs-topper {
-            font-size: var(--topperFontSize);
-            line-height: 1.2em;
-            text-transform: uppercase;
-            text-align: inherit;
-            letter-spacing: .1em;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: (4/16rem);
-            display: block;
-        }
-    
-        .cs-title {
+        h1 {
             font-size: var(--headerFontSize);
             font-weight: 900;
             line-height: 1.2em;
             text-align: inherit;
-            max-width: (700/16rem);
+            width: 100%;
+            max-width: 100%;
             margin: 0 0 (16/16rem) 0;
             color: var(--headerColor);
             position: relative;
         }
+
+        h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+        }
+
+        h2 {
+            font-size: (32/16rem);
+            margin-top: (32/16rem);
+        }
+
+        h3 {
+            font-size: (24/16rem);
+            color: var(--primary);
+        }
+
+        h4, h5, h6 {
+            font-size: (20/16rem);
+        }
+
+        .cs-button-solid {
+            margin-bottom: (32/16rem);
+        }
+
+        .cs-no-margin {
+            margin: 0;
+        }
+
+        h1, h3 {
+            color: var(--primary);
+        }
     
-        .cs-text {
+        p {
             font-size: var(--bodyFontSize);
             line-height: 1.5em;
             text-align: inherit;
             width: 100%;
-            max-width: (650/16rem);
-            margin: 0;
+            margin: 0 0 (16/16rem) 0;
             color: var(--bodyTextColor);
-        }
-    
-        .cs-title {
-            /* 23 characters wide including spaces */
-            max-width: 23ch;
-        }
-    
-        .cs-text {
-            /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
-            margin-bottom: (16/16rem);
             &:last-of-type {
                 margin-bottom: (32/16rem);
             }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+            }
         }
 
-        .cs-image-group {
+        ol, ul {
+            padding-left: (24/16rem);
+            margin: 0 0 (32/16rem) 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            flex-direction: column;
+            gap: (16/16rem);
+        }
+
+        ul {
+            li {
+                list-style: none;
+                color: inherit;
+                position: relative;
+
+                &:before {
+                    /* custom list bullet */
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    background: currentColor;
+                    opacity: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: (10/16rem);
+                    left: (-12/16rem);
+                }
+            }
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
             width: 100%;
             max-width: (630/16rem);
             /* 400px - 775px */
-            height: clamp(25rem, 69vw, 48.4375rem);
+            height: clamp(25rem, 70vw, 48.4375rem);
+            box-shadow: 0px 2.80579px 42.0868px rgba(0, 0, 0, 0.16);
             /* 100px - 200px */
-            box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
-            /* clips the corners of the children around the border radius */
+            
+            /* clips img tag corners */
             overflow: hidden;
-            position: relative;
-        }
-
-        .cs-background {
-            width: 100%;
-            height: 100%;
-            /* makes it cover the parent dimensions */
-            object-fit: cover;
-            display: block;
 
             img {
-                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
                 height: 100%;
-                /* makes it cover the parent like a backgorund image */
+                width: 100%;
                 object-fit: cover;
-                display: block;
             }
         }
-
-        .cs-box {
-            text-align: center;
-            /* 40px - 67px top & bottom */
-            /* 20px - 28px left & right */
-            padding: clamp(2.5rem, 5vw, 4.1875rem) clamp(1.25rem, 2vw, 1.75rem);
-            background-color: #fff;
-            /* 48px - 80px */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: (8/16rem);
-            position: absolute;
-            /* 16px - 20px */
-            right: clamp(1rem, 2vw, 1.25rem);
-            /* 16px - 20px */
-            bottom: clamp(1rem, 2vw, 1.25rem);
-        }
-
-        .cs-number {
-            /* 31px - 39px */
-            font-size: clamp(1.9375rem, 3vw, 2.4375rem);
-            line-height: 1.2em;
-            font-weight: 900;
-            text-align: inherit;
-            margin: 0;
-            color: var(--primary);
-        }
-
-        .cs-desc {
-            font-size: (16/16rem);
-            line-height: 1.2em;
-            text-align: inherit;
-            font-weight: 700;
-            width: (123/16rem);
-            margin: 0;
-            color: var(--bodyTextColor);
-        }
-
     }
 
 }
 
-/* Small Desktop - 1024px */
+/* Tablet - 768px */
 @media only screen and (min-width: 64rem) {
-    #sbs-865 {
+    #sbs-867 {
+        padding: var(--sectionPadding);
+
         .cs-container {
-            max-width: (1280/16rem);
             flex-direction: row;
+            max-width: (1280/16rem);
             justify-content: space-between;
         }
 
+        .cs-content {
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
+        }
+
+        .cs-picture {
+            width: 47vw;
+            position: relative;
+        }
     }
 }
 
-/* Dark Mode */
+  /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #sbs-865 {
-            background-color: #1a1a1a;
-            .cs-topper {
-                color: var(--primary);
-            }
-            .cs-title, .cs-text {
+        #sbs-867 {
+            background-color: var(--dark);
+            
+            h1, .cs-text, h2, h3, h4, h5, h6, li, p {
                 color: var(--bodyTextColorWhite);
             }
-
-            .cs-text {
-                opacity: .8;
+            h1, h3, a {
+                color: var(--primaryLight);
             }
 
-            .cs-floater {
-                opacity: .5;
+            p, li {
+                color: #ebebeb;
             }
-        }
-    }
-}
 
-/* Mobile - 360px */
-
-#quote-827 {
-    width: 100%;
-    max-width: (630/16rem);
-    margin: 0 0 (32/16rem) 0;
-    /* 16px - 32px */
-    padding: clamp(1rem, 3vw, 2rem);
-    background-color: #F6F3EE;
-    position: relative;
-
-    .cs-quote-text {
-        /* 14px - 16px */
-        font-size: clamp(.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        width: 100%;
-        max-width: (500/16rem);
-        margin: 0 0 (16/16rem);
-        color: #767676;
-        display: block;
-    }
-
-    .cs-name {
-        font-size: (16/16rem);
-        line-height: 1.2em;
-        text-transform: uppercase;
-        font-weight: bold;
-        width: 100%;
-        margin: 0 0 (4/16rem);
-        color: var(--headerColor);
-        display: block;
-    }
-
-    .cs-job {
-        font-size: (14/16rem);
-        line-height: 1.5em;
-        color: #767676;
-        display: block;
-    }
-
-    .cs-quote-icon {
-        /* 60px - 136px */
-        width: clamp(3.75rem, 10vw, 8.5rem);
-        height: auto;
-        position: absolute;
-        bottom: 0;
-        /* 16px - 32px */
-        right: clamp(1rem, 4vw, 2rem);
-    }
-}
-
-/* Dark Mode, copy and paste only the styles inside the #list-827 brackets into your section's dark mode media query */
-body.dark-mode {
-    #quote-827 {
-        background-color: var(--accent);
-
-        .cs-quote-text, .cs-name {
-            color: var(--bodyTextColorWhite);
-        }
-
-        .cs-job {
-            color: var(--bodyTextColorWhite);
-            opacity: .8;
-        }
-
-        .cs-quote-icon {
-            opacity: .2;
+            .cs-picture {
+                border-color: var(--dark);
+                background-color: var(--dark);
+            }
         }
     }
 }
