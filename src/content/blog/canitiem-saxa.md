@@ -1,6 +1,6 @@
 ---
-title: Thursday Morning Bliss
-description: Every Thursday morning, let the stress of the week melt away as you immerse yourself in the rejuvenating world of A Touch of Thai. With our special promotion, there’s no better time to treat yourself or surprise a loved one.
+title: Wednesday Morning Bliss
+description: Every Wednesday morning, let the stress of the week melt away as you immerse yourself in the rejuvenating world of A Touch of Thai. With our special promotion, there’s no better time to treat yourself or surprise a loved one.
 author: A Touch of Thai
 date: 2023-09-09T15:28:08.486Z
 tags:
@@ -12,13 +12,13 @@ imageAlt: Thai Massage
 
 ## Experience Serenity with a Special Offer
 
-Every Thursday morning, let the stress of the week melt away as you immerse yourself in the rejuvenating world of "A Touch of Thai". With our special promotion, there’s no better time to treat yourself or surprise a loved one.
+Every Wednesday morning, let the stress of the week melt away as you immerse yourself in the rejuvenating world of "A Touch of Thai". With our special promotion, there’s no better time to treat yourself or surprise a loved one.
 
-## 10% Off Every Thursday Morning
+## £5 Off Every Wednesday Morning
 
-To show our appreciation for our valued customers and to make your mid-week even more delightful, we're offering a special 10% discount on all our services every Thursday morning. Whether you choose to indulge in a traditional Thai massage, aromatherapy, or any of our other premium services, Thursday mornings come with an added touch of joy.
+To show our appreciation for our valued customers and to make your mid-week even more delightful, we're offering a special £5 discount on all 60 minute massages every Wednesday morning. Whether you choose to indulge in a traditional Thai massage, aromatherapy, or any of our other premium services, Wednesday mornings come with an added touch of joy.
 
-## Why Choose Thursday Mornings?
+## Why Choose Wednesday Mornings?
 
 -   A Refreshing Start: Begin your day with renewed energy, ready to tackle the rest of the week.
 -   Beat the Rush: Experience our services in a quieter, more relaxed environment.
@@ -30,8 +30,8 @@ With such an enticing offer, slots are sure to fill up fast. We recommend bookin
 
 ## Terms & Conditions:
 
--   This promotion is valid on Thursday mornings only.
+-   This promotion is valid on Wednesday mornings only.
 -   Cannot be combined with other offers or promotions.
 -   Subject to availability.
 
-Embrace the serene ambiance of "A Touch of Thai" and enjoy exceptional savings every Thursday morning. We look forward to pampering you soon.
+Embrace the serene ambiance of "A Touch of Thai" and enjoy exceptional savings every Wednesday morning. We look forward to pampering you soon.
